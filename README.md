@@ -1,3 +1,3 @@
-# Portfolio-Projects
+## Portfolio-Projects
 
-Hi, this is Royed's Data analyst portfolio projects repository.
+Hi, this is Royed's Data Analyst portfolio projects in SQL.
