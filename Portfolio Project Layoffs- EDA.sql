@@ -16,9 +16,6 @@ FROM world_layoffs.layoffs_staging2;
 
 
 
-
-
-
 -- Looking at Percentage to see how big these layoffs were
 SELECT MAX(percentage_laid_off),  MIN(percentage_laid_off)
 FROM world_layoffs.layoffs_staging2
@@ -36,18 +33,6 @@ FROM world_layoffs.layoffs_staging2
 WHERE  percentage_laid_off = 1
 ORDER BY funds_raised_millions DESC;
 -- BritishVolt looks like an EV company, Quibi! I recognize that company - wow raised like 2 billion dollars and went under - ouch
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -148,53 +133,6 @@ ORDER BY dates ASC
 SELECT dates, SUM(total_laid_off) OVER (ORDER BY dates ASC) as rolling_total_layoffs
 FROM DATE_CTE
 ORDER BY dates ASC;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
